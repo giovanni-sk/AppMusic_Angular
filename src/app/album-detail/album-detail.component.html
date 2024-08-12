@@ -1,0 +1,16 @@
+<div class="my-5" *ngIf="selectedAlbumId  && currentAlbum" >
+               <div class="card" style="width: 18rem">
+                 <img src="{{currentAlbum[0].url}}" class="card-img-top" alt="..." />
+                 <div class="card-body">
+                   <h5 class="card-title">{{currentAlbum[0].title}}</h5>
+                   <a href="#" class="btn btn-primary">Play</a>
+                   <p class="card-text">
+                List of Song
+                   </p>
+                   <ul *ngFor="let list of SongList">
+                    <li *ngIf=SongList>{{SongList[0].list}}</li>
+                   </ul>
+
+                 </div>
+               </div>
+             </div>

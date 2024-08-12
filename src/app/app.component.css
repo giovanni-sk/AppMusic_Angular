@@ -1,0 +1,15 @@
+.logo {
+               display: block;
+               margin: 0 2rem 0 0;
+               background-image: linear-gradient(to right, #ff8a00, #e52e71);
+               -webkit-background-clip: text;
+               background-clip: text;
+               color: transparent;
+               font-size: 1.125rem;
+               font-weight: bold;
+             }
+             .navbar{
+               background: #0044ff!important;
+               color: #fff;
+             }
+        

@@ -1,0 +1,37 @@
+.card {
+               box-shadow: 1px 2px 15px #838282;
+               max-width: 700px;
+               width: 100%;
+           
+  
+             }
+             .row{
+               max-width: 1024px;
+               width: 100%;
+               margin: auto;
+             }
+
+             .pagination {
+               display: flex;
+               justify-content: center;
+               gap: 5px;
+               margin-top: 20px;
+             }
+             
+             .pagination button {
+               padding: 5px 10px;
+               border: 1px solid #ccc;
+               border-radius: 3px;
+               background-color: #f8f8f8;
+               cursor: pointer;
+             }
+             
+             .pagination button.active {
+               background-color: #007bff;
+               color: white;
+             }
+             
+             .pagination button:disabled {
+               cursor: not-allowed;
+               opacity: 0.5;
+             }

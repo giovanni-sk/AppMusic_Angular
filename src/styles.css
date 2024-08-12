@@ -1,1 +1,167 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+
+body{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  align-items: center;
+  align-content: center;
+  padding-right: calc(var(--section-gap) / 2);
+  background-color: #0a59ec;
+  padding: 0.5rem;
+  height: 3rem;
+  font-family: Tahoma, sans-serif;
+  font-size: 1.125rem;
+}
+
+
+
+nav {
+  margin-left: -30rem;
+}
+
+a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+}
+
+.time {
+  margin-left: 20rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+main {
+  text-align: center;
+}
+
+.search {
+  margin: 2rem 2rem 1rem 2rem;
+}
+
+input[type="search"] {
+  max-width: 700px;
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 15px #dbdada;
+}
+
+.btn-action,
+.btn-search {
+  margin-left: 1rem;
+  padding: 0.3rem;
+  border: none;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #313030;
+  color: #fff;
+}
+
+
+
+.categorie {
+  background-color: #0575f5;
+  color: #fff;
+}
+
+.card-ul {
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+  padding: 0;
+}
+
+.card-li {
+  gap: 2rem;
+  background-color: #3caef0b0;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.action {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn-action {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+}
+
+.btn-action:hover {
+  background-color: #313030;
+  color: #fff;
+}
+
+.aside-card {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  box-shadow: 1px 2px 15px #838282;
+  text-align: left;
+}
+
+.play {
+  background-color: #0d6af7;
+  border: none;
+  color: #fff;
+  width: 5rem;
+  height: 2rem;
+  padding: auto 0;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.list {
+  background-color: #0d6af7;
+  padding: 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.list-song {
+  display: block;
+  list-style: none;
+  text-align: left;
+}
+
+.list-song > li {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.right {
+  max-width: 932px;
+  width: 100%;
+}
+.left {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.aside-image {
+  max-width: 300px;
+  width: 100%;
+} */
