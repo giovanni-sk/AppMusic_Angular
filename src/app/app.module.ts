@@ -10,6 +10,7 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AlbumDescriptionComponent } from './album-description/album-description.component';
+import { PaginateComponent } from './paginate/paginate.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlbumDescriptionComponent } from './album-description/album-description
     SearchComponent,
     AlbumDetailComponent,
     LoginComponent,
-    AlbumDescriptionComponent
+    AlbumDescriptionComponent,
+    PaginateComponent
   ],
   imports: [
     BrowserModule,

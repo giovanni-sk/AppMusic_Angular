@@ -15,7 +15,7 @@ export class AlbumService {
     
       const start = (page - 1) * this.pageSize;
       const end = start + this.pageSize;
-      return of(ALBUMS.slice(start, end)); // Retourne une page de données  }
+      return of(ALBUMS.slice(start, end)); // Retourne une page de données  
   
   
   }
