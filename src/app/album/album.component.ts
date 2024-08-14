@@ -58,4 +58,18 @@ updatePageNumbers():void{
 toggleDetails(albumId: string): void {
   this.selected = albumId;
 }
+
+getInputSearch(element:string){
+  console.log(element+'get');
+  if (element.trim()!==' ') {
+    this.AlbumList=this.AlbumList.filter(e=>{
+      console.log(e.name.toLowerCase().includes(element.toLowerCase()));
+      
+      return e.name.toLowerCase().includes(element.toLowerCase());
+    })
+  }else{
+   
+  }
+  
+}
 }

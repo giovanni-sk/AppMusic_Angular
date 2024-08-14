@@ -7,7 +7,7 @@ import { Album } from './album';
   providedIn: 'root'
 })
 export class AlbumService {
-  private readonly pageSize = 5; // Nombre de musiques par page
+  private readonly pageSize = 2; // Nombre de musiques par page
 
   constructor() { }
 //les observables sont utilisés pour avoir les resultats de maniere asynchone 

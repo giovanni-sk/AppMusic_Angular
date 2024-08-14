@@ -5,33 +5,35 @@
     Next
   </button>
 </div> -->
-<div class="row">
-               <div class="pagination">
-                              <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
-                            
-                              <button *ngFor="let page of pageNumbers" 
-                                      (click)="goToPage(page)" 
-                                      [class.active]="page === currentPage">
-                                {{ page }}
-                              </button>
-                            
-                              <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
-                            </div>
-  <div class="col-4 ">
+
+<div class="container d-flex mt-4">
+             
+  <div class="mx-2">
                  <app-album-detail [selectedAlbumId]="selected"></app-album-detail>
   </div>
      
-  <div class="col-8">
-            
-    <div class="card rigth my-5 pb-5" *ngFor="let album of AlbumList">
+  <div class="">
+   <app-search (searchEvent)="getInputSearch($event)"></app-search>
+    <div class="pagination ">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+    
+      <button *ngFor="let page of pageNumbers" 
+              (click)="goToPage(page)" 
+              [class.active]="page === currentPage">
+        {{ page }}
+      </button>
+    
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+    <div class="card rigth my-3 pb-5" *ngFor="let album of AlbumList">
       <div class="card-header  text-bg-primary">
-        {{ album.ref }}
+        {{ album.ref  | uppercase}}
       </div>
       <div class="card-body ">
-        <h2 class="card-title "><a class="nav-link" routerLink="#">{{ album.title }}</a></h2>
+        <h2 class="card-title "><a class="nav-link" routerLink="/album/{{album.id}}">{{ album.title }}</a></h2>
         <p>{{ album.description }}</p>
         <ul class="card-ul" *ngIf="album.tags">
-          <li class="badge text-bg-warning p-2 mx-2 text-dark" *ngFor="let tag of album.tags">{{ tag }}</li>
+          <li class="badge text-bg-warning p-2 mx-2 my-2 text-dark" *ngFor="let tag of album.tags">{{ tag | uppercase }}</li>
         </ul>
       </div>
       <div class="action d-flex justify-content-around">
@@ -50,7 +52,7 @@
             />
           </svg>
         </p>
-        <p>
+        <span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24px"
@@ -62,8 +64,8 @@
               d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Z"
             />
           </svg>
-        </p>
-        <p>{{ album.duration }}</p>
+        
+        {{ album.duration }} min</span>
         <!-- // Durée de l'album -->
         <button class="btn btn-dark" (click)="toggleDetails(album.id)">Details</button>
         <!-- // Bouton "Details" pour afficher les détails -->

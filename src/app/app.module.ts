@@ -8,6 +8,8 @@ import { ChronometreComponent } from './chronometre/chronometre.component';
 import { SearchComponent } from './search/search.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+import { AlbumDescriptionComponent } from './album-description/album-description.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { LoginComponent } from './login/login.component';
     ChronometreComponent,
     SearchComponent,
     AlbumDetailComponent,
-    LoginComponent
+    LoginComponent,
+    AlbumDescriptionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
