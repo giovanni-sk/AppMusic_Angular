@@ -27,7 +27,7 @@
     </div>
     <div class="card rigth my-3 pb-5" *ngFor="let album of AlbumList">
       <div class="card-header  text-bg-primary">
-        {{ album.ref  | uppercase}}
+        {{ album.ref }}
       </div>
       <div class="card-body ">
         <h2 class="card-title "><a class="nav-link" routerLink="/album/{{album.id}}">{{ album.title }}</a></h2>

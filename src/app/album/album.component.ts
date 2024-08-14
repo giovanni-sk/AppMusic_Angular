@@ -61,14 +61,16 @@ toggleDetails(albumId: string): void {
 
 getInputSearch(element:string){
   console.log(element+'get');
-  if (element.trim()!==' ') {
+  if (element.trim()!=='') {
     this.AlbumList=this.AlbumList.filter(e=>{
-      console.log(e.name.toLowerCase().includes(element.toLowerCase()));
+      console.log(e.title.toLowerCase().includes(element.toLowerCase()));
       
-      return e.name.toLowerCase().includes(element.toLowerCase());
+      return e.title.toLowerCase().includes(element.toLowerCase());
     })
   }else{
-   
+      this.loadAlbumPage(this.currentPage);
+      console.log(this.currentPage);
+      
   }
   
 }
