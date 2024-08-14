@@ -34,6 +34,7 @@ export class AlbumDetailComponent {
       this.isPlaying = true;
       this.progress = 0;
       this.currentSongIndex = 0;
+      this.totalSongs=this.SongList!.list.length;
 
       const totalDuration = this.currentAlbum.duration; // total duration in seconds
       const intervalDuration = totalDuration / 100; // 1% of the total duration

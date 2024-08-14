@@ -1,19 +1,14 @@
-<!-- <div>
-  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
-  <span>Page {{ currentPage }} of {{ totalPages }}</span>
-  <button (click)="nextPage()" [disabled]="currentPage === totalPages">
-    Next
-  </button>
-</div> -->
 
 <div class="container d-flex mt-4">
-             
-  <div class="mx-2">
+        
+  <div class="mx-2 my-5">
                  <app-album-detail [selectedAlbumId]="selected"></app-album-detail>
   </div>
-     
-  <div class="">
-   <app-search (searchEvent)="getInputSearch($event)"></app-search>
+  <div class="container my-5">
+    <h1 class="text-center">{{title}}</h1>
+   <div class="container w-100">
+     <app-search (searchEvent)="getInputSearch($event)"></app-search>
+   </div>
     <div class="pagination ">
       <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
     
@@ -29,14 +24,14 @@
       <div class="card-header  text-bg-primary">
         {{ album.ref }}
       </div>
-      <div class="card-body ">
+      <div class="card-body mx-2">
         <h2 class="card-title "><a class="nav-link" routerLink="/album/{{album.id}}">{{ album.title }}</a></h2>
         <p>{{ album.description }}</p>
         <ul class="card-ul" *ngIf="album.tags">
           <li class="badge text-bg-warning p-2 mx-2 my-2 text-dark" *ngFor="let tag of album.tags">{{ tag | uppercase }}</li>
         </ul>
       </div>
-      <div class="action d-flex justify-content-around">
+      <div class="action d-flex justify-content-around mx-2">
         <button class="btn btn-dark">en</button>
         <!-- // Bouton d'action -->
         <p>

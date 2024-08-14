@@ -15,7 +15,7 @@
               </div>
               <ul class="list-group list-group-flush">
                 <p *ngIf="SongList" class="bg-primary p-4 text-ligth">Liste des songs:</p>
-                <li class="list-group-item" *ngFor="let song of SongList?.list">{{ song }}</li>
+                <li class="list-group-item text-bold" *ngFor="let song of SongList?.list">{{ song | uppercase}}</li>
                
               </ul>
             </div>

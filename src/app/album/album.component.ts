@@ -8,6 +8,7 @@ import { AlbumService } from '../album.service';
   styleUrl: './album.component.css'
 })
 export class AlbumComponent {
+  title:string="Page App Music";
 AlbumList: Album[] = [];
 currentPage: number = 1;
 totalPages: number = 1;
